@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HARVESTORA</title>
+    <script>
+      // Redirect GitHub Pages 404s to HashRouter home
+      var pathSegments = window.location.pathname.split('/');
+      var repoName = pathSegments[1] || '';
+      var targetUrl = '/' + repoName + '/#/' + window.location.search;
+      window.location.replace(targetUrl);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to Harvestora...</p>
+  </body>
+</html>
