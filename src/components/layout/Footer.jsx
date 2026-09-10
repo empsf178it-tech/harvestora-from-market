@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Sprout, ArrowRight, CheckCircle2, Globe, Share2, Mail } from 'lucide-react';
+import { Sprout, ArrowRight, CheckCircle2, Globe, Mail } from 'lucide-react';
+import { XIcon, InstagramIcon, FacebookIcon, LinkedinIcon, YoutubeIcon } from '../common/SocialIcons';
 import confetti from 'canvas-confetti';
 import { useApp } from '../../context/AppContext';
 
@@ -55,15 +56,21 @@ export const Footer = () => {
               From Good Soil to Good Food. Connecting modern consumers with authentic South Indian agricultural harvests, rooted in soil health, farmer respect, and transparency.
             </p>
 
-            <div className="flex items-center gap-4 text-stone-400">
-              <a href="#website" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#4E5D36] hover:text-white transition-colors" aria-label="Website">
-                <Globe className="w-4 h-4" />
+            <div className="flex items-center gap-3 text-stone-400">
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#4E5D36] hover:text-white transition-colors" aria-label="X (formerly Twitter)">
+                <XIcon className="w-4 h-4" />
               </a>
-              <a href="#share" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#4E5D36] hover:text-white transition-colors" aria-label="Share">
-                <Share2 className="w-4 h-4" />
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#4E5D36] hover:text-white transition-colors" aria-label="Instagram">
+                <InstagramIcon className="w-4 h-4" />
               </a>
-              <a href="#contact" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#4E5D36] hover:text-white transition-colors" aria-label="Mail">
-                <Mail className="w-4 h-4" />
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#4E5D36] hover:text-white transition-colors" aria-label="Facebook">
+                <FacebookIcon className="w-4 h-4" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#4E5D36] hover:text-white transition-colors" aria-label="LinkedIn">
+                <LinkedinIcon className="w-4 h-4" />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#4E5D36] hover:text-white transition-colors" aria-label="YouTube">
+                <YoutubeIcon className="w-4 h-4" />
               </a>
             </div>
 
